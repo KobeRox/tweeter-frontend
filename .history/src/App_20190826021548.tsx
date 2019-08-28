@@ -92,14 +92,9 @@ class Tweeter extends React.Component<{}, IState> {
     let { tweets } = this.state;
     return (
       <div>
-        <h1>Teach me</h1>
+        <h1>Tweeter</h1>
         <form onSubmit={e => this.handleSubmit(e)}>
-          <input
-            type="text"
-            placeholder="Title"
-            name="title"
-            value={this.state.title}
-          />
+          <input type="text" placeholder="Title" name="title" />
           <br />
           <br />
           <textarea placeholder="Write a post " name="post"></textarea>
